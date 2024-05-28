@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "api"
+version = "0.1.0"
+description = ""
+authors = ["keithosayande <keith.osayande@adhocteam.us>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.0"
+uvicorn = {extras = ["standard"], version = "^0.29.0"}
+python-multipart = "^0.0.9"
+llama-index = "^0.10.38"
+llama-index-llms-openai = "^0.1.21"
+python-dotenv = "^1.0.1"
+llama-index-extractors-entity = "^0.1.2"
+llama-index-storage-docstore-mongodb = "^0.1.3"
+llama-index-storage-index-store-mongodb = "^0.1.2"
+motor = "^3.4.0"
+llama-index-vector-stores-mongodb = "^0.1.5"
+pymongo = {extras = ["srv"], version = "^4.7.2"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
